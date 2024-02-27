@@ -7,9 +7,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "migrate:dev": "east migrate --es-modules",
+    "rollback:dev": "east rollback --es-modules"
   },
   "dependencies": {
+    "east": "^2.0.3",
     "nuxt": "^3.10.1",
     "postgres": "^3.4.3",
     "vue": "^3.4.15",
